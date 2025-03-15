@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    background-color: black;   
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 3.5rem;
+    color: #ffffff;
+}
+li, a {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+    color: #ffffff;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+.nav-links{
+    list-style: none;
+}
+.nav-links li{
+    display: inline-block;
+    padding: 0 20px;
+}
+.nav-links li a{
+    transition: all 0.3s ease 0s;
+}
+.nav-links li a:hover{
+    color: #f8e008;
+}
+.nav-btn {
+    padding: 9px 25px;
+    font-size: 16px;
+    background-color: #f8e008;
+    color: #000000;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.nav-btn:hover{
+    background-color: #000000;
+    color: #ffffff;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    text-align: center;
+}
+h1{
+    font-size: 3.5rem;
+    font-family: Poppins;
+    
+}
+.hero{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    overflow: hidden;
+}
+.icon {
+    position: absolute;
+    /*width: 50px; /* Adjust size as needed */
+    /*height: 50px;*/
+}
+.color-palette{
+    bottom: 10%;
+    left: 10%;
+    width: 90px;
+    height: 90px;
+}
+.visual-studio{
+    top: 20%;
+    left: 10%;
+    width: 50px;
+    height: auto;
+}
+
+.pen-tool {
+    bottom: 15%;
+    right: 100%;
+    width: 50px;
+    height: auto;
+}
+
+.figma {
+    top: 20%;
+    right: 10%;
+    width: 80px;
+    height: auto;
+}
+
+.typography {
+    bottom: 10%;
+    right: 55%;
+    width: 90px;
+    height: 75px;
+}
+.geometry {
+    top: 5%;
+    right: 45%;
+    width: 90px;
+    height: auto;
+}
+.cursor {
+    bottom: 25%;
+    right: 30%;
+    width: 50px;
+    height: auto;
+    transform: rotate(200deg); /* Rotate the element */
+}
+.pen {
+    bottom: 11%;
+    right: 15%;
+    width: 50px;
+    height: auto;
+}
+.icon{
+    position: absolute;
+    animation: float 3s ease-in-out infinite;
+}
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* Adjust the height of the float */
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.wrapper{
+    display: flex;
+}
+.wrapper .static-txt{
+    color: #ffffff;
+    font-size: 3.0rem;
+    line-height: 90px;
+    font-family: Poppins;
+    font-weight: 400;
+}
+.wrapper .dynamic-txt{
+    margin-left: 15px;
+    line-height: 90px;
+    height: 90px;
+    overflow: hidden;
+}
+.dynamic-txt li{
+    list-style: none;
+    color: #E90074;
+    font-size: 3.0rem;
+    font-weight: 400;
+    top: 0;
+    text-align: left;
+    position: relative;
+    animation: slide 12s steps(4) infinite;
+}
+@keyframes slide{
+    100%{
+        top: -360px;
+    }
+}
+.dynamic-txt li{
+    position: relative;
+}
+.dynamic-txt li::after{
+    content: "";
+    position: absolute;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+    border-left: 2px solid #E90074;
+    animation: typing 3s steps(14) infinite;
+}
+@keyframes typing {
+    40%,
+    60% {
+        left: calc(100% + 30px);
+    }
+    100%{
+        left: 0;
+    }
+}
+.btn-one{
+    background-color: #FFF078;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 30px 2px;
+}
+.btn-one:hover{
+    background-color: #ffffff;
+    color: #000000;
+}
+h2{
+    color: #ffffff;
+    font-family: Poppins;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #000000;
+}
+.about-main{
+    margin-bottom: 40px;
+}
+.about img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 20px 10px;
+    object-fit: cover;
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 10px #ffffff;
+}
+.about-me{
+    max-width: 800px;
+    max-width: 0 auto;
+    color: #ffffff;
+}
+

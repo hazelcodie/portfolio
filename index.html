@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="mystyle.css"> 
+</head>
+<body>
+   <header>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Skills</a></li>
+        </ul>
+    </nav>
+    <a class="nav-button" href="#"><button class="nav-btn">Contact Me</button></a>
+   </header>
+   <!-- Hero Section -->
+<section class="hero"> 
+   <div class="container">
+    <h1>Hi, I'm Haze!</h1>
+    <div class="wrapper">
+    <div class="static-txt">I make</div>
+    <ul class="dynamic-txt">
+        <li><span>Creative Website.</span></li>
+        <li><span>Mobile Design.</span></li>
+        <li><span>Web Design.</span></li>
+        <li><span>Brand Design.</span></li>
+    </ul>
+    </div>
+    <div class="hero-button">
+        <button class="btn-one">Projects</button>
+    </div>
+   </div> 
+    <!-- Images -->
+    <img src="images/colorpaltte.png" alt="Color Palette" class="icon color-palette">
+    <img src="images/cursor.png" alt="Cursor" class="icon cursor">
+    <img src="images/figma.png" alt="Figma" class="icon figma">
+    <img src="images/geomentry.png" alt="Geometry" class="icon geometry">
+    <img src="images/pen.png" alt="Pen" class="icon pen">
+    <img src="images/typography.png" alt="Typography" class="icon typography">
+    <img src="images/visualstudio.png" alt="Visual Studio Code" class="icon visual-studio">
+</section>
+    <!--section of about me -->
+    <!-- Left Column: Text -->
+<section class="alternate-section">
+      <div class="content-container">
+    <div id="description" class="description">
+        <h2>About the Image</h2>
+        <p>Click on an image card to see its description here!</p>
+    </div>
+    </div>
+    <!-- Right Column: Image Cards -->
+    <div class="cards-container">
+       <div class="row-one">
+
+        <div class="image-card" id="card1" onclick="showDescription('Description for Image 1')">
+            <img src="images/colorpaltte.png" alt="Color Palette">
+        </div>
+
+        <div class="color-card" style="background-color: #f1c40f;">
+            <h3>Color Card 1</h3>
+            <p>Description about this section.</p>
+          </div>
+
+          <div class="image-card" id="card1" onclick="showDescription('Description for Image 2')">
+            <img src="images/colorpaltte.png" alt="Color Palette">
+        </div>
+
+       </div>
+
+         <div class="row-two">
+    
+            <div class="color-card" style="background-color: #f1c40f;">
+                <h3>Color Card 1</h3>
+                <p>Description about this section.</p>
+            </div>
+
+            <div class="image-card" id="card1" onclick="showDescription('Description for Image 3')">
+                <img src="images/colorpaltte.png" alt="Color Palette">
+            </div>
+
+            <div class="color-card" style="background-color: #f1c40f;">
+                <h3>Color Card 1</h3>
+                <p>Description about this section.</p>
+            </div>
+            
+    </div>
+
+
+</section>
+
+
+
+<!--section for skills-->
+<section class="skills">
+
+</section>
+<!--section for my projects -->
+<section class="projects">
+    <h2>Projects</h2>
+    <div class="project">
+        <img src="project1.jpg" alt="project1">
+        <h3>Project 1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus ut libero ultricies.</p>
+    </div>
+    <div class="project">
+        <img src="project2.jpg" alt="project2">
+        <h3>Project 2</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus ut libero ultricies.</p>
+    </div>
+    <div class="project">
+        <img src="project3.jpg" alt="project3">
+        <h3>Project 3</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus ut libero ultricies.</p>
+    </div>
+</section>
+<!--section for socials -->
+<section class="socials">
+    <h2>Connect with me</h2>
+    <div class="social-links">
+        <a href="#"><img src="facebook.png" alt="facebook"></a>
+        <a href="#"><img src="twitter.png" alt="twitter"></a>
+        <a href="#"><img src="instagram.png" alt="instagram"></a>
+    </div>
+</body>
+</html>
