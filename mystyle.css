@@ -275,8 +275,12 @@ h2{
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    transition: 0.3s;
+    transition: transform 0.1s ease-in-out;
     overflow: hidden;
+}
+
+.photo:hover {
+    transform: scale(1.05);
 }
 
 /* Images inside grid */
@@ -313,4 +317,5 @@ h2{
         font-size: 16px; 
         color: #ffffff;
     }
+   
 }
