@@ -48,59 +48,66 @@
 <section class="about-me">
     <div class="about-left-column">
         <h1 class="about">About Me</h1>
-        <p class="right-paragraph">click photos for description</p>
+        <div id="photo-description">Click a photo to see the description.</div>
     </div>
     <!-- Right Column: Image -->
     <div class="photo-grid">
-        <div class="photo" data-description="Hello">
+        <div class="photo" data-description="Hi! I'm Hazel Delda, a senior Bachelor of Science in Computer Science (BSCS) student at Biliran Province State University. Passionate about both technology and design, I have a growing interest in UI/UX and front-end development, where I blend creativity with functionality to enhance user experiences.<br> 
+
+<br>Throughout my academic journey, I’ve gained experience in coding especially web development. While I gravitate toward front-end design, I'm also expanding my knowledge of different programming languages and exploring the back-end side of development.<br> Currently, I’m working on a WordPress project, while also learning ReactJS. 
+
+Beyond academics, I enjoy reading books and running . Excited about the future, I’m continuously improving my skills and preparing for opportunities in the tech industry.">
             <img src="images/profile.jpg" alt="Photo 1">
         </div>
         <div class="photo yellow" data-description="Description for Photo 2"></div>
-        <div class="photo" data-description="Hello world">
+        <div class="photo" data-description="I’m passionate about learning UI and UX design, so I actively seek opportunities to expand my knowledge by attending seminars and events related to the field.<br> 
+        <br>Recently, I attended the CEBUXD event in Mandaue, Cebu, held at The Company, where designers come together as a community to share insights and experiences. Engaging with professionals and fellow enthusiasts helps me stay updated with industry trends and improve my design skills.">
             <img src="images/cebux.jpg" alt="Photo 3">
         </div>
         <div class="photo pink" data-description="Description for Photo 4"></div>
-        <div class="photo" data-description="Hello world">
+        <div class="photo" data-description="Our thesis project called <i>SkinSense: A Mobile Application for Facial Skin Type Detection and Skincare Recommendation</i> recently placed third in an international research competition held at Shih Chien University in Taipei, Taiwan, from February 10-13 , 2025.<br>
+        <br>This achievement has been a significant milestone in my academic journey, reinforcing my dedication to continuous learning and innovation in the tech field.
+        <i><a href='https://www.facebook.com/WowBiPSU/posts/bipsugoingglobal-fourth-year-students-from-the-bachelor-of-science-in-computer-s/657881396904455/' target='_blank'>Read more here...</a><i/>">
             <img src="images/ISSLET.jpg" alt="Photo 5">
         </div>
         <div class="photo purple" data-description="Description for Photo 6"></div>
-        <div class="photo" data-description="Hello world">
+        <div class="photo" data-description="During my internship at CVISNET Foundation Inc., a non-stock, non-profit organization that leverages Information and Communication Technology (ICT) for productivity and business solutions, I had the opportunity to enhance my skills in various areas.<br><br> I worked on design tasks, deepened my knowledge of WordPress, and contributed to a project that allowed me to apply what I had learned. Additionally, I gained hands-on experience with the Laravel framework, further expanding my technical abilities in web development. This internship provided me with valuable real-world experience and reinforced my passion for creating functional and user-friendly digital solutions.">
             <img src="images/internship.jpg" alt="Photo 7">
         </div>
         <div class="photo white" data-description="Description for Photo 8"></div>
-        <div class="photo" data-description="Hello world">
+        <div class="photo" data-description="In 2023, I participated in RESEARCHLYMPICS 2023, an event focused on advancing scientific inquiry and collaboration through research poster presentations. I collaborated with a schoolmate to plan and design a research poster for our paper,<i> Multi-Platform Evacuation Management and Information System.</i> <br><br>Competing against participants from seven departments in a school-wide competition, we secured 3rd place in the Tech Transfer category. This experience strengthened my skills in teamwork, strategic planning, and effectively conveying complex ideas through visual communication.">
             <img src="images/researchlympics.jpg" alt="Photo 9">
         </div>
        
     </div>
+    
 </section>
-
-
 
 <!--section for skills-->
 <section class="skills">
+    <h1 class="skill">Skills</h1>
+    <p class="folder-paragraph">Technologies I've tried and learn recently.</p>
+    <div class="folders">
+        <div class="folder" id="designKit">
+            <img src="images/designKit.png" alt="DesignKit">
+            <p>DesignKit</p>
+        </div>
+        <div class="folder" id="devKit">
+            <img src="images/devKit.png" alt="DevKit">
+            <p>DevKit</p>
+        </div>
+    </div>
+</section>
 
-</section>
-<!--section for my projects -->
-<section class="projects">
-    <h2>Projects</h2>
-    <div class="project">
-        <img src="project1.jpg" alt="project1">
-        <h3>Project 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus ut libero ultricies.</p>
+<!-- Modal -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <img id="modalImage" src="" alt="Modal Image">
+        <div class="modal-images" id="modalImagesContainer"></div>
+        <button id="closeModalBtn" class="modal-btn">Closed</button>
     </div>
-    <div class="project">
-        <img src="project2.jpg" alt="project2">
-        <h3>Project 2</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus ut libero ultricies.</p>
-    </div>
-    <div class="project">
-        <img src="project3.jpg" alt="project3">
-        <h3>Project 3</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus ut libero ultricies.</p>
-    </div>
-   
-</section>
+</div>
+
 <!--section for socials -->
 <section class="socials">
     <h2>Connect with me</h2>
