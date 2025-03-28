@@ -4,21 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="mystyle.css"> 
+    <link rel="stylesheet" href="mystyle.css">
+    <script src="https://kit.fontawesome.com/76db431ca7.js" crossorigin="anonymous"></script>
 </head>
 <body>
    <header>
     <nav>
         <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Skills</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
         </ul>
     </nav>
-    <a class="nav-button" href="#"><button class="nav-btn">Contact Me</button></a>
+    <a href="#"><button class="nav-btn">Contact Me</button></a>
    </header>
    <!-- Hero Section -->
-<section class="hero"> 
+<section id="home" class="hero"> 
    <div class="container">
     <h1>Hi, I'm Hazel!</h1>
     <div class="wrapper">
@@ -31,7 +32,7 @@
     </ul>
     </div>
     <div class="hero-button">
-        <button class="btn-one">Projects</button>
+        <a href="projects.html" id="projectButton"><button class="btn-one">Projects</button></a>
     </div>
    </div> 
     <!-- Images -->
@@ -45,7 +46,7 @@
 </section>
     <!--section of about me -->
     <!-- Left Column: Text -->
-<section class="about-me">
+<section  id="about" class="about-me">
     <div class="about-left-column">
         <h1 class="about">About Me</h1>
         <div id="photo-description">Click a photo to see the description.</div>
@@ -84,7 +85,7 @@ Beyond academics, I enjoy reading books and running . Excited about the future, 
 </section>
 
 <!--section for skills-->
-<section class="skills">
+<section id="skills" class="skills">
     <h1 class="skill">Skills</h1>
     <p class="folder-paragraph">Technologies I've tried and learn recently.</p>
     <div class="folders">
@@ -110,12 +111,13 @@ Beyond academics, I enjoy reading books and running . Excited about the future, 
 
 <!--section for socials -->
 <section class="socials">
-    <h2>Connect with me</h2>
+    <h2>Created to Create</h2>
     <div class="social-links">
-        <a href="#"><img src="facebook.png" alt="facebook"></a>
-        <a href="#"><img src="twitter.png" alt="twitter"></a>
-        <a href="#"><img src="instagram.png" alt="instagram"></a>
+        <i class="fa-brands fa-github" style="color: #FFD43B;"></i>
+        <i class="fa-brands fa-facebook" style="color: #FFD43B;"></i>
+        <i class="fa-brands fa-linkedin-in" style="color: #FFD43B;"></i>
     </div>
+</section>
     <script src="script.js"></script> 
 </body>
 </html>
