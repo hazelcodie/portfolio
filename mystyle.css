@@ -458,3 +458,68 @@ h2{
 .social-links i:hover {
     transform: scale(1.2); 
 }
+
+
+  
+/* styles.css */
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  /* Existing card styles */
+  .card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.2s;
+    margin: 10px;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .card-img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card-content {
+    padding: 15px;
+  }
+  
+  .card-title {
+    font-size: 1.5em;
+    margin: 0 0 10px;
+  }
+  
+  .card-description {
+    font-size: 1em;
+    color: #666;
+  }
+  
+  .card-link {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+  }
+  
+  .card-link:hover {
+    text-decoration: underline;
+  }
+  
+  

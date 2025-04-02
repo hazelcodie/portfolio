@@ -94,3 +94,15 @@ document.addEventListener("DOMContentLoaded", function () {
 document.getElementById("projectButton").addEventListener("click", function () {
   window.location.href = "projects.html"; 
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const cardLinks = document.querySelectorAll('.card-link');
+
+  cardLinks.forEach(function(link) {
+    link.addEventListener('click', function(event) {
+      event.preventDefault();
+      alert('More information about ' + this.previousElementSibling.previousElementSibling.textContent);
+    });
+  });
+});
